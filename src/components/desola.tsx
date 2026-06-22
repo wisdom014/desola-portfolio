@@ -213,7 +213,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           
           {/* Logo */}
-          <a href="#" className="flex items-center space-x-2">
+          <a href="/" className="flex items-center space-x-2">
             <span 
               className="text-2xl font-black tracking-tight transition-all duration-500"
               style={{ fontFamily: theme === 'engineer' ? 'Space Grotesk' : 'Syne' }}

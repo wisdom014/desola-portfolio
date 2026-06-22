@@ -1,6 +1,6 @@
 import './App.css';
 // import NavBar from './components/navbar';
-import Desola from './components/desola.tsx';
+import Desola from './components/desola';
 
 function App() {
   return (
