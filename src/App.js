@@ -1,10 +1,12 @@
 import './App.css';
-import NavBar from './components/navbar';
+// import NavBar from './components/navbar';
+import Desola from './components/desola.tsx';
 
 function App() {
   return (
     <div className="App">
-    <NavBar />
+    {/* <NavBar /> */}
+    <Desola />
     </div>
   );
 }
