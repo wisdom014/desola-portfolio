@@ -1,11 +1,11 @@
 import './App.css';
-// import NavBar from './components/navbar';
+import { Analytics } from "@vercel/analytics/react";
 import Desola from './components/desola';
 
 function App() {
   return (
     <div className="App">
-    {/* <NavBar /> */}
+      <Analytics />
     <Desola />
     </div>
   );
