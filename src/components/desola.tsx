@@ -363,7 +363,7 @@ export default function App() {
               }`}
             >
               <IconClapperboard />
-              <span>Watch Certifications</span>
+              <span>Check Certifications</span>
             </a>
           </div>
         </div>
@@ -400,21 +400,6 @@ export default function App() {
                 </p>
               </div>
             </div>
-
-            {/* High-Tech Blueprint HUD Text Overlays (Rendered strictly inside Engineer Mode) */}
-            {theme === 'engineer' && (
-              <div className="absolute inset-0 pointer-events-none z-20 flex flex-col justify-between p-4 font-mono text-[9px] text-[#64FFDA] bg-cyan-950/20">
-                <div className="flex justify-between">
-                  <span>VECTOR_LOAD_SYS: ACTIVE</span>
-                  <span>TENSIONAL_RATIO: 1.15kNp</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>UNIOSUN MODEL #2026</span>
-                  <span>COORDINATES CALIBRATED</span>
-                </div>
-              </div>
-            )}
-
           </div>
 
           {/* Core Framing Outlines */}
@@ -558,21 +543,27 @@ export default function App() {
               <span className="font-space">Education Profile</span>
             </h3>
             <div className="relative pl-4 border-l-2 border-slate-00 dark:border-slate-800 space-y-4">
-              <div className="relative text-xs">
+              <div className="relative h-0 text-xs">
                 <div className="absolute -left-[22px] top-1 w-2.5 h-2.5 rounded-full bg-orange-400 border-2 border-white dark:border-slate-900" />
-                <span className="text-[8px] font-bold text-slate-400 font-mono block">2021 — PRESENT</span>
-                <p className="font-bold">B.Eng Civil Engineering</p>
-                <p className="text-[10px] mt-0.5 text-slate-500">Osun State University (UNIOSUN)</p>
+                <span className="text-[8px] font-bold text-slate-400 font-mono block">2024 — PRESENT</span>
               </div>
               <div className="relative text-xs">
                 <div className="absolute -left-[22px] top-1 w-2.5 h-2.5 rounded-full bg-slate-400 border-2 border-white dark:border-slate-900" />
+                <p className="font-bold">Civil Engineering</p>
+                <p className="text-[10px] mt-0.5 text-slate-500">Osun State University (UNIOSUN)</p>
+              </div>
+              <div className="relative h-0 p-0 text-xs">
+                <div className="absolute -left-[22px] top-1 w-2.5 h-2.5 rounded-full bg-emerald-500 border-2 border-white dark:border-slate-900" />
                 <span className="text-[8px] font-bold text-slate-400 font-mono block">GRADUATE</span>
+              </div>
+              <div className="relative text-xs">
+                <div className="absolute -left-[22px] top-1 w-2.5 h-2.5 rounded-full bg-slate-400 border-2 border-white dark:border-slate-900" />
                 <p className="font-bold">Command Day Sec. School</p>
                 <p className="text-[10px] mt-0.5 text-slate-500">High School leaving credential</p>
               </div>
               <div className="relative text-xs">
                 <div className="absolute -left-[22px] top-1 w-2.5 h-2.5 rounded-full bg-slate-400 border-2 border-white dark:border-slate-900" />
-                <p className="font-bold">Nickdel Girls' College</p>
+                <p className="font-bold">Nickdel Private School</p>
                 <p className="text-[10px] text-slate-500">Foundational Secondary Base</p>
               </div>
             </div>
@@ -644,7 +635,7 @@ export default function App() {
               <span className="font-space">Accreditations</span>
             </h3>
             <ul className="space-y-3 text-xs">
-              <li className={`flex items-center space-x-2 p-2 rounded hover:bg-slate-100 dark:hover:bg-slate-800/60 transition ${
+              <li className={`flex space-x-2 p-2 rounded hover:bg-slate-100 dark:hover:bg-slate-800/60 transition ${
                 theme === 'engineer' ? 'bg-[#0A192F]' : 'bg-slate-50'
               }`}>
                 <IconHelmetSafety />
@@ -653,16 +644,19 @@ export default function App() {
                   <span className="text-[9px] text-slate-600">Osun State University (UNIOSUN)</span>
                 </div>
               </li>
-              <li className={`flex items-center space-x-2 p-2 rounded hover:bg-slate-100 dark:hover:bg-slate-800/60 transition ${
+              <li className={`flex space-x-2 p-2 rounded hover:bg-slate-100 dark:hover:bg-slate-800/60 transition ${
                 theme === 'engineer' ? 'bg-[#0A192F]' : 'bg-slate-50'
               }`}>
                 <IconDrafting />
                 <div>
                   <strong className="block leading-tight">Volunteer Service</strong>
-                  <span className="text-[9px] text-slate-600">Game Changer Conference</span>
+                  <span className="text-[9px] flex text-slate-600">Game Changer Conference</span>
+                  <span className="text-[9px] flex text-slate-600">WholeYounitiative Movement</span>
+                  <span className="text-[9px] flex text-slate-600">Conferrence of Engineers 1.0</span>
+                  <span className="text-[9px] flex text-slate-600">ONSU Personality Lecture'25</span>
                 </div>
               </li>
-              <li className={`flex items-center space-x-2 p-2 rounded hover:bg-slate-100 dark:hover:bg-slate-800/60 transition ${
+              <li className={`flex  space-x-2 p-2 rounded hover:bg-slate-100 dark:hover:bg-slate-800/60 transition ${
                 theme === 'engineer' ? 'bg-[#0A192F]' : 'bg-slate-50'
               }`}>
                 <IconCertificate />
@@ -924,7 +918,7 @@ export default function App() {
         theme === 'engineer' ? 'border-[#233554] text-[#8892B0]' : 'border-slate-200 text-slate-500'
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
-          <p>© 2026 Adesola Victoria Adejumo. Built with structural engineering integrity & design pride.</p>
+          <p>© 2026 Adesola Victoria Adejumo. <a href="https://portfolio-sable-five-15.vercel.app/" target="_blank" rel="noopener noreferrer">Built by Elijah Akinniyi</a></p>
         </div>
       </footer>
 
