@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import sustainable from '../style/imgs/certificate-1.png';
+import volunteer from '../style/imgs/certificate-2.png';
 
 // ==========================================
 // SELF-CONTAINED SVG ICONS
@@ -724,15 +726,13 @@ export default function App() {
           <div className={`w-full md:w-1/2 rounded-2xl overflow-hidden shadow-xl border-2 transition-all duration-500 flex flex-col ${
             theme === 'engineer' ? 'bg-[#112240] border-cyan-500/30 text-[#64FFDA]' : 'bg-white border-slate-200 text-slate-800'
           }`}>
-            <div className="relative overflow-hidden aspect-[4/3] bg-slate-100 flex items-center justify-center">
-              {/* <iframe 
-                src="Adesola Adejumo - 2026-06-03.pdf#toolbar=0&navpanes=0&scrollbar=0" 
-                className="w-full h-full border-0 rounded-t-xl" 
-                title="Adesola Adejumo - LEAP Sustainable Tech Certification"
-              /> */}
-              <div className="absolute top-3 left-3 bg-orange-500 text-white text-[9px] font-bold font-mono px-2.5 py-1 rounded shadow pointer-events-none">
-                AUTODESK & LEAP ACADEMY (PDF)
-              </div>
+            <div className="relative overflow-hidden bg-slate-100 flex items-center justify-center">
+              <img 
+                src={sustainable}
+                alt="Volunteer Service Certificate" 
+                className="w-full h-full object-contain transition duration-500 rounded-t-xl"
+              />
+
             </div>
             <div className="p-6 space-y-2 flex-grow flex flex-col justify-between">
               <div className="space-y-1">
@@ -751,15 +751,12 @@ export default function App() {
           <div className={`w-full md:w-1/2 rounded-2xl overflow-hidden shadow-xl border-2 transition-all duration-500 flex flex-col ${
             theme === 'engineer' ? 'bg-[#112240] border-cyan-500/30 text-[#64FFDA]' : 'bg-white border-slate-200 text-slate-800'
           }`}>
-            <div className="relative overflow-hidden aspect-[4/3] bg-cyan-950 flex items-center justify-center">
-              {/* <img 
-                src="image.png" 
+            <div className="relative overflow-hidden bg-cyan-950 flex items-center justify-center">
+              <img 
+                src={volunteer}
                 alt="Volunteer Service Certificate" 
-                className="w-full h-full object-contain hover:scale-105 transition duration-500 rounded-t-xl"
-              /> */}
-              <div className="absolute top-3 left-3 bg-cyan-500 text-slate-900 text-[9px] font-bold font-mono px-2.5 py-1 rounded shadow pointer-events-none">
-                THE GAME CHANGER CONFERENCE
-              </div>
+                className="w-full h-full object-contain transition duration-500 rounded-t-xl"
+              />
             </div>
             <div className="p-6 space-y-2 flex-grow flex flex-col justify-between">
               <div className="space-y-1">
